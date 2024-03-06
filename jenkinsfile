@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                echo 'build stages running'
+            }
+        }
+          stage('build') {
+            steps {
+                echo 'monitoring stages running'
+            }
+        }
+    }
+}
